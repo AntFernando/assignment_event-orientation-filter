@@ -7,7 +7,7 @@
     </authors>
 
     <module>
-        <name>solution_event-orientation-filter</name>
+        <name>assignment_event-orientation-filter</name>
         <parameters> --name /vOrientationFilter --strict true --theta 60 </parameters>
         <node>localhost</node>
     </module>

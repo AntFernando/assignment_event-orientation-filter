@@ -23,7 +23,7 @@
 </module>
 
 <module>
-    <name>solution_event-orientation-filter</name>
+    <name>assignment_event-orientation-filter</name>
     <parameters>--name /vOrMap --strict true --theta 60 --filterSize 20 --tau 1000000 --Te 100 </parameters>
     <node>localhost</node>
 </module>
