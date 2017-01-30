@@ -1,0 +1,10 @@
+Test suit Test Assignment Event Spiking Model started...
+Test suit Test Assignment Event Spiking Model passed!
+
+---------- summary -----------
+Total number of test suites  : 1
+Number of passed test suites : 1
+Number of failed test suites : 0
+Total number of test cases   : 0
+Number of passed test cases  : 0
+Number of failed test cases  : 0
