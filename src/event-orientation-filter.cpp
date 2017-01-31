@@ -101,6 +101,7 @@ void spikingModel::initialiseFilter(int filterSize, int theta)
     //FILL IN THE CODE HERE
     //HINT: using the equation of a line: ax + by + c = 0 avoids division
     //HINT: investigate "gabor filters" for a more robust filter
+    filter.resize(filterSize, filterSize);
 
 }
 
