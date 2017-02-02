@@ -16,6 +16,10 @@ To accomplish this task you have to modify the code developed in the [previous a
 
 You should be able to visualise the subthreshold activity map of the neurons as an image stream in yarpview and the output events from the map by using `vFramer`, running the _yarpmanager script_ provided from within [**app/scripts**](./app/scripts/).
 
+The application will look like this:
+
+![event-or](./misc/assignment2.png)
+
 You will run this assignment with the [_Dataset_event-orientation-filter_]() dataset. The dataset has bars at different orientations, each map will be selective to only one orientation and should show spiking activity only where the orientation of the stimulus matches the orientation of the filter. Hint: The angles of the stimulus are: 0, 60, 90 and 120 degrees.
 
 Once done, you can test your code **Automatically**: [running the script **test.sh**](https://github.com/vvv-school/vvv-school.github.io/blob/master/instructions/how-to-run-smoke-tests.md) in the **smoke-test** directory.
