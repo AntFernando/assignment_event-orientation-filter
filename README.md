@@ -22,11 +22,13 @@ The application will look like this:
 
 You will run this assignment with the [_Dataset_event-orientation-filter_]() dataset. The dataset has bars at different orientations, each map will be selective to only one orientation and should show spiking activity only where the orientation of the stimulus matches the orientation of the filter. Hint: The angles of the stimulus are: 0, 60, 90 and 120 degrees.
 
-Once done, you can test your code **Automatically**: [running the script **test.sh**](https://github.com/vvv-school/vvv-school.github.io/blob/master/instructions/how-to-run-smoke-tests.md) in the **smoke-test** directory.
+Once done, you can test your code **Automatically**: [running the script **test.sh**](https://github.com/vvv-school/vvv-school.github.io/blob/master/instructions/how-to-run-smoke-tests.md) in the **smoke-test** directory. An example of the response you should receive to pass the assignment for a 60 degree oriented filter is:
+![ass-goal](./misc/assignment2-goal.png)
 
 #Note:
-- The input parameter of the filter (and of the module) will be the orientation, theta.
+- The input parameter, theta,  will be set by the smoke_test and must be adjustable on the command line.
+- You may have to tune Te and Tau for the second dataset, by setting the default values.
 - The filter must have a positive region, where the input events increase the energy, and a negative (or zero) region on the sides where the input events decrease the energy.
-- You can choose different options to design the filter. A possible solution is to use the equation of a line (you need to specify the thickness), or, if you feel more adventurous, use the [2D Gabor filter](https://en.wikipedia.org/wiki/Gabor_filter)
+- You can choose different options to design the filter. A possible solution is to use the equation of a line (you may need to adjust the thickness), or, if you feel more adventurous, use the [2D Gabor filter](https://en.wikipedia.org/wiki/Gabor_filter)
 
 # [How to complete the assignment](https://github.com/vvv-school/vvv-school.github.io/blob/master/instructions/how-to-complete-assignments.md)
