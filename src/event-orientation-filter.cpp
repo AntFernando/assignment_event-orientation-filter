@@ -165,12 +165,12 @@ void spikingModel::onRead(vBottle &input)
 
     //and iterate through each one
     for(vQueue::iterator qi = q.begin(); qi != q.end(); qi++) {
-        event<AddressEvent> v = getas<AddressEvent>(*qi);
+        event<AddressEvent> v = as_event<AddressEvent>(*qi);
 
-        updateModelUsingFilter(v->getX(), v->getY(), v->getStamp());
+        updateModelUsingFilter(v->x, v->y, v->stamp);
 
         //and creating a spiking event if needed
-        if(spikeAndReset(v->getX(), v->getY()))
+        if(this->spikeAndReset(v->x, v->y))
             outputBottle.addEvent(*qi);
 
     }
@@ -188,7 +188,7 @@ void spikingModel::onRead(vBottle &input)
     if(debugPort.getOutputCount()) {
 
         //decay and convert all pixels
-        int currentspiketime = q.back()->getStamp();
+        int currentspiketime = q.back()->stamp;
         yarp::sig::ImageOf< yarp::sig::PixelMono > &img = debugPort.prepare();
         img.resize(energymap.width(), energymap.height());
         for(int y = 0; y < energymap.height(); y++) {
